@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div id="converter">
+        <img src="https://lh3.googleusercontent.com/jjg62byejq-6LE1yGu3iHzXrWth1QNAMQnmVj23LUZFcOS91rp5a33ZglJuCxXwXDN14JT5x8HBYJiE5S-pghtjnsZxrZ-ls4l4K=s0" alt="Logo" class="logo">
+        <h1>Temperature Converter</h1>
+        <p>Masukkan suhu yang ingin anda konversi ke dalam form dibawah ini:</p>
+        <input type="number" id="tempInput" placeholder="Inputkan suhu anda">
+        <select id="unit">
+            <option value="C">Celsius</option>
+            <option value="F">Fahrenheit</option>
+        </select>
+        <button onclick="convertTemp()">Konversi</button>
+        <button onclick="resetForm()">Reset</button>
+        <button onclick="reverseUnits()">Reverse</button>
+        <p id="result"></p>
+    </div>
+    <div id="calculationMethod"></div>
+    <div id="conversionExplanation"></div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
